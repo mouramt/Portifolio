@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Matheus Moura</h1>
+        <p>Desenvolvedor Front-End | HTML, CSS, JavaScript</p>
+    </header>
+
+    <img src="perfil.jpg" alt="sua foto" class="profile-pic"/>
+
+    <section>
+        <h2>Sobre mim</h2>
+        <p>Sou desenvolvedor front-end apaixonado por criar sites simples, rápidos e funcionais. Trabalho com HTML, CSS e JavaScript puro.</p>
+
+        <div class="social-links" id="social-links">
+            <a href="mailto:mouramt2002@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/5585994056327"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/mouramt" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <button onclick="document.body.classList.toggle('dark')" class="dark-toggle">🌙 Alternar tema</button>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos">
+            <div class="card">
+                <h3>Calculadora IMC</h3>
+                <p>Projeto feito com HTML, CSS e javaScript</p>
+                <a href="#">Ver projeto</a>
+            </div>
+
+            <div class="card">
+                <h3>Lista de tarefas</h3>
+                <p>Adicione e remova tarefas com JavaScrpit</p>
+                <a href="#">Ver projeto</a>
+            </div>
+
+            <!--adicionar mais projetos depois-->
+        </div>
+    </section>
+
+    <form action="https://formspree.io/f/seucodigo" method="POST">
+  <input type="text" name="nome" placeholder="Seu nome" required>
+  <input type="email" name="_replyto" placeholder="Seu e-mail" required>
+  <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por Matheus Moura</p>
+        <p>
+        <a href="#top">Início</a> |
+        <a href="#projetos">projetos</a> |
+        <a href="#social-links">Contato</a>
+        </p>
+    </footer>
+
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="top-btn">⬆️</button>
+</body>
+<script>
+  const topBtn = document.querySelector('.top-btn');
+  topBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
